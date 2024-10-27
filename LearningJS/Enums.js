@@ -1,10 +1,10 @@
-const Car = {
+export const Car = {
   TOYOTA: { mark : "Toyota", year: 2019, model: "Model"},
   HONDA: "Honda",
   FORD: "Ford"
 }
 
-console.log(Car.TOYOTA);
+//console.log(Car.TOYOTA);
  
 const func = (car) => {
   switch (car) {
@@ -18,3 +18,4 @@ const func = (car) => {
       return "Unknown car";
   }
 }
+
