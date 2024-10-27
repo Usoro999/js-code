@@ -26,6 +26,10 @@ console.log(i, j, k); // 3, 7, 8
 const [f = 1, l = 1, d = 1] = [8, 2,,9];
 console.log(f, l, d); // d = 5
 
+const ab = [1, 3, 2]
+const cs = ab.toSorted()
+console.log(cs);
+
 
 
 

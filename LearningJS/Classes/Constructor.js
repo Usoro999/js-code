@@ -19,7 +19,7 @@ piter.fullName('jeck', 'Milk')
 console.log(piter); // Person { firstName: 'Piter', lastname: 'Jonas', fullName: 'jeckMilk' }
 console.log(piter.__proto__); // { fullName: [Function (anonymous)] }
 
-// Add STATIC method to classes with constractor
+// Add STATIC method to classes with constructor
 Person.fullName = function (name, lastname) {
   return this.fullName = name+lastname
 }
@@ -35,6 +35,11 @@ Student.prototype.introduce = function(){
   console.log(`Hello, i'm ${this.firstName} ${this.lastname} and stadiing on ${this.course}`);
 
 }
-//Student.prototype = Object.create(Person.prototype)
+Student.prototype = Object.create(Person.prototype)
 const john = new Student('John', 'More', 'Science')
 john.introduce()
+
+// Person inherits from Student 
+Person.prototype = new Student()
+const Gorge = new Person('John', 'R')
+Gorge.introduce() // introduce() from Student is available in Person 

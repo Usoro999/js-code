@@ -50,14 +50,6 @@ const arrNested = [[9, 100], [4, 3], 5, [33, 90], 9]
 console.log(arrNested.flat()); //[9, 100,  4, 3,5,  33, 90, 9]
 
 
-//SORT
-const names = ['John', 'Curtis', 'Aurea', '1Real']
-console.log(names.sort()); // [ '1Real', 'Aurea', 'Curtis', 'John' ]
-//not gonna work with numbers
-const numbers = [-30, 100, 55, -34, 70]
-console.log(numbers.sort()); // [ -30, -34, 100, 55, 70 ]
-//be work
-console.log(numbers.sort((a, b) => a-b)); //[ -34, -30, 55, 70, 100 ]
 
 
 

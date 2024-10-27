@@ -14,3 +14,4 @@ const PersonProto = {
 const sarah = Object.create(PersonProto)
 sarah.init('Sarah', 'Conor')
 console.log(sarah.fullName())
+
