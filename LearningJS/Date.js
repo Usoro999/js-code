@@ -19,7 +19,7 @@ now1.getDate()
 now1.getHours()
 console.log(+now1); // time in miliseconds(Number) => 1703082619484
 
-
+now1.setUTCMinutes(min)
 
 
 // Moment ext https://momentjs.com/

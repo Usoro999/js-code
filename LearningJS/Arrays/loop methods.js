@@ -24,12 +24,14 @@ const subtract = arrayEUR.reduce(function(sum, value, index, arrayEUR){
 }, 1000) // =>> start from 1000
 console.log(subtract); // 650
 
+
 // MAX value in array using Reduce
 const max = arrayEUR.reduce((max, value) => {
   if (max > value) return max
   else return value
 })
 console.log(max); // 100
+
 
 // Chaining of methods
 const valletUSD = arrayEUR
@@ -40,3 +42,4 @@ const valletUSD = arrayEUR
 const numbers = [5, -4, 9, -3, 0, 99]
 const number = numbers.find(num => num > 7)
 console.log(number); // 9
+

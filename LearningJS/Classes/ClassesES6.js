@@ -5,9 +5,9 @@ const PersonCl = class {
 
 // Class declaration
 class PersonCl1 {
-  constructor(firstName, lastName) {
+  constructor(firstName, lastName) { 
     this.firstName = firstName
-    this.lastName = lastName
+    this.lastName = lastName  
   }
   // Instance method
   fullName() {
@@ -21,13 +21,22 @@ class PersonCl1 {
   calcAge(age) {
     return 2024 - age
   }
+  static money = 2000;
+
+  static multipleMoney(multiple) { 
+    this.money = multiple * this.money // static variable is always in static method  
+    return this.money
+  }
+ 
 }
-const jesica = new PersonCl1('Jesica', 'Star')
-jesica.fullName()
+const jessica = new PersonCl1('Jessica', 'Star')
+jessica.fullName()
 console.log(PersonCl1.calcAge(1985)) // 39
-
-
-
+console.log(PersonCl1.multipleMoney(2)) 
+console.info(PersonCl1.money)
+PersonCl1.multipleMoney(2)
+console.info(PersonCl1.money)
+ 
 
 // INHERITANCE
 class StudentCl extends PersonCl1{
@@ -41,4 +50,3 @@ const martha = new StudentCl('Martha', 'Smith', 'Technic')
 martha.calcAge(1999) // 25
 martha.fullName() // MarthaSmith
 
-const mark = new StudentCl()

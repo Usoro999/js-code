@@ -25,10 +25,10 @@ console.log(normalName);
 const withSpaces = '   space   ';
 console.log(withSpaces.trim()); // 'space'
 
-const string = 'All passangers ca go to the gate 1 or gate 5';
-console.log(string.replace('gate', 'door')); // All passangers ca go to the door 1 or gate 5
-console.log(string.replace(/gate/g, 'door')); // All passangers ca go to the door 1 or door 5
-console.log(string.replaceAll('gate', 'door')); // All passangers ca go to the door 1 or door 5
+const string = 'All passengers ca go to the gate 1 or gate 5';
+console.log(string.replace('gate', 'door')); // All passengers ca go to the door 1 or gate 5
+console.log(string.replace(/gate/g, 'door')); // All passengers ca go to the door 1 or door 5
+console.log(string.replaceAll('gate', 'door')); // All passengers ca go to the door 1 or door 5
 
 const air = airline.split(' ');
 console.log(air); // [ 'TAP', 'Air', 'Portugal' ]
@@ -42,6 +42,10 @@ console.log(str.padStart(30, '+')); // ++++++++++++++Mr. Yurii SOROKA
 console.log(str.padEnd(30, '+')); // Mr. Yurii SOROKA++++++++++++++
 
 console.log(str.repeat(5)); // Mr. Yurii SOROKAMr. Yurii SOROKAMr. Yurii SOROKAMr. Yurii SOROKAMr. Yurii SOROKA
+
+console.log(str.charAt(0)); // M
+console.log(str.indexOf("M")); // 0
+
 
 
 

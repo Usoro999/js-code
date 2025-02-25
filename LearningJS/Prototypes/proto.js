@@ -2,7 +2,6 @@ function Car() {
 }
 Car.prototype.type = 'sedan'
 Car.prototype.wheels = '17`'
-
 Car.prototype.getCarType = function() {
   return `Type of car: ${this.type}`;
 };
@@ -25,6 +24,6 @@ console.log(myCar);
 
 // 2 Inheritance from Car with constructor
 Toyota.prototype = Object.create(Car.prototype)
-const honda = new Toyota('model', 'year')
-console.log(honda.type);
+const corolla = new Toyota('model', 'year')
+console.log(corolla.type + corolla.getModelInfo);
 

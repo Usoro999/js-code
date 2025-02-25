@@ -18,6 +18,7 @@ arr.some(elem => elem > 0)
 
 // EVERY
 arr.every(elem => typeof elem == 'string') // false
+arr.every(elem => elem.includes('Frank')); 
 
 //SLICE -> new copy from array - const arr = ['Den', '1250', true]
 arr.slice(1) // ['1250', true]

@@ -11,6 +11,9 @@ const arr3 = [4, 5, arr]; // [4,5, [1,2,3]]
 
 console.log(...arr2); // 4 5 1 2 3 -- like individual elements
 
+const ob = [1, 2, 3, 4, 5, 5,]
+const max = Math.max(...ob); // 5
+
 // Spread arrays
 const menu = ['pizza', 'tea', 'coffee'];
 const newMenu = [...menu, 'soup', 'fri potato'];
