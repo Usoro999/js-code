@@ -16,7 +16,7 @@ const family = {
     name: 'Maria',
     age: 34,
   },
-  doughter: {
+  daughter: {
     name: 'Maia',
     age: 12,
   },
@@ -26,22 +26,28 @@ const family = {
   }
 }
 const { wife, ...rest1 } = family;
-console.log(wife, rest1); // { name: 'Maria', age: 34 } { doughter: { name: 'Maia', age: 12 }, cat: { name: 'Lolo', age: 3 } }
+console.log(wife, rest1); // { name: 'Maria', age: 34 } { daughter: { name: 'Maia', age: 12 }, cat: { name: 'Lolo', age: 3 } }
 
 
 // Functions with REST
-const func = function (...nubmers) {
-  const arr = [nubmers];
-  console.log(nubmers);
+const func = function (...numbers) {
+  const arr = [numbers];
+  console.log(numbers);
 }
 func(5, 6, 7, 8, 'string'); // [ 5, 6, 7, 8, 'string' ]
 
-const func1 = function (...nubmers) {
-  const arr = [nubmers];
-  console.log(nubmers);
+const func1 = function (...numbers) {
+  const arr = [numbers];
+  console.log(numbers);
 }
 const x = [5, 6, 7];
 func1(x); // [ [ 5, 6, 7 ] ]
 func1(...x); // [ 5, 6, 7 ]
 
-
+//
+const arrowBigFunction2 = (parameter, parameter2, parameter3, ...rest) => {
+  console.log(parameter);  // перший аргумент
+  console.log(parameter2); // другий аргумент
+  console.log(parameter3); // третій аргумент
+  console.log(rest);      // масив з усіма іншими аргументами
+};

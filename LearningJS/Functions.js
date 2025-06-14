@@ -22,12 +22,21 @@ flight('747', undefined, 100); /// [ { numberOfPlane: '747', numPassengers: 100,
 
 
 // Passing by Value === using primitive values => variables wont be changed
-const a = 50;
+let a = 50;
 function changeA(a) {
   a = 100;
 }
 changeA(a);
 console.log(a); // 50 => values do not change since they are primitive
+
+// How to change global variable
+let b = 50;
+function changeA() {
+  b = 100;  
+}
+changeA();
+console.log(b); // 100
+
 
 // Passing by reference => variables always be changed
 const obj = {
@@ -41,11 +50,10 @@ changeObj(obj);
 console.log(obj.price); // 800  => obj are changed since the link to obj is copied, not the obj
 
 
-
 // Higher-Order functions
 // Create call back function
-const oneWord = function (string) {
-  return string.replace(/ /g, '');
+const replaceFirstJToK = function (string) {
+  return string.replace('J', 'K');
 };
 const firstUpperCaseWord = function (string) {
   const [first, ...others] = string.split(' ');
@@ -56,7 +64,7 @@ const transformer = function (string, fn) {
   console.log(fn(string));
   
 };
-transformer('Java and Javascript', oneWord); // JavaandJavascript
+transformer('Java and Javascript', replaceFirstJToK); // Kava and Javascript
 transformer('Java and Javascript', firstUpperCaseWord) // JAVA and Javascript
 
 

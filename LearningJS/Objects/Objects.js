@@ -1,5 +1,5 @@
 
-const engenieer = {
+export const engineer = {
   name: 'Yurii',
   lastName: 'Soro',
   skill: ['java', 'javascript', 'selenium', 'cypress'],
@@ -10,7 +10,7 @@ const engenieer = {
       name: 'Maria',
       age: 34,
     },
-    doughter: {
+    daughter: {
       name: 'Maia',
       age: 12,
     }
@@ -33,51 +33,17 @@ const engenieer = {
   },
 };
 
-console.log(engenieer.lastName);
-console.log(engenieer['lastName']);
+console.log(engineer.lastName);
+console.log(engineer['lastName']);
 
-engenieer.location = 'Portugal'; // we can add a new parameter to the object
-engenieer['region'] = 'Porto';
+engineer.location = 'Portugal'; // we can add a new parameter to the object
+engineer['region'] = 'Porto';
 
-console.log(engenieer);
-console.log(engenieer.calAge()); // Invoke objects method
-console.log(engenieer['calcSalary']());
-console.log(engenieer.printMessage());
+console.log(engineer);
+console.log(engineer.calAge()); // Invoke objects method
+console.log(engineer['calcSalary']());
+console.log(engineer.printMessage());
 
-
-
-// Destructuring objects
-const { name, lastName, skill } = engenieer; // Names of variables must be the same as object's
-console.log(skill); // [ 'java', 'javascript', 'selenium', 'cypress' ]
-
-//Rename new variables
-const { name: objectName, lastName: objectLastName, skill: objectSkill } = engenieer; 
-console.log(objectLastName); // Soro
-
-// Default values
-const { name: oName, age = [], lastName: oLastName } = engenieer; // when age is not excist in engenieer
-console.log(age);
-
-//Mutating variables
-let a = 10;
-let b = 5;
-const obj = { a: 100, b: 500, c: 90, d:88 };
-({ a, b } = obj);
-console.log(a, b); // 100 500
-
-//Nested objects
-const { wife } = engenieer.family; // parse all object from engenieer
-console.log(wife); // { name: 'Maria', age: 34 }
-
-const { wife: { name: eName, age: eAge } } = engenieer.family; // parse variables from obj in obj
-console.log(eName, eAge); // Maria 34
-
-//Destructuring the function from obj
-engenieer.languages({
-  lang1: 'java',
-  lang2: 'javascript',
-  lang3: 'html',
-});
 
 // Use arrays in objects
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun' ];

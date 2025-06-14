@@ -1,5 +1,19 @@
 {
   "cSpell.words": [
-    "Yaris"
-  ]
+    "Soro",
+    "Yaris",
+    "Yurii",
+    "перший"
+  ],
+  "code-runner.showRunIconInEditorTitleMenu": true,
+  "code-runner.executorMap": {
+  "javascript": "node"
+},
+"code-runner.runInTerminal": false,
+"workbench.colorCustomizations": {
+  "statusBar.background": "#57986b",
+  "statusBar.foreground": "#FFFFFF"
+},
+"javascript.suggest.completeFunctionCalls": true,
+"typescript.suggest.completeFunctionCalls": true
 }
