@@ -3,7 +3,7 @@ const familyObj = {
     name: 'Maria',
     age: 34,
   },
-  doughter: {
+  daughter: {
     name: 'Maia',
     age: 12,
   }
@@ -22,5 +22,5 @@ console.log(keys, values);
 
 // STRING to ARRAY
 const string = 'string'
-const arrr = [...string] // use SPREAD operator
-console.log(arrr); // [ 's', 't', 'r', 'i', 'n', 'g' ]
+const arrayA = [...string] // use SPREAD operator
+console.log(arrayA); // [ 's', 't', 'r', 'i', 'n', 'g' ]

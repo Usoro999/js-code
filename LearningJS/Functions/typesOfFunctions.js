@@ -33,4 +33,10 @@ const arrowBigFunction2 = (parameter, parameter2, parameter3) => {
     console.log(par + parameter2 + parameter3);
     return par;
 }
-arrowBigFunction2(3,5,3,6)
+arrowBigFunction2(3, 5, 3, 6)
+
+// Default parameters
+const functionWithDefault = (par1, par2 = 10) => {
+    return par1 * par2
+}
+functionWithDefault(50) // 500 

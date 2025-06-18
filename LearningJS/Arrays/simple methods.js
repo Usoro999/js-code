@@ -1,7 +1,7 @@
 const arr = ['Den', '1250', true, 30,50,-2];
 
 arr.push('Ukraine'); // add a new element into end
-arr.unshift('Poland'); //add a new element into begining and can return a length og array
+arr.unshift('Poland'); //add a new element into beginning and can return a length og array
 
 const arrLength = arr.push(777); // add a new element and return a length of array
 
@@ -43,7 +43,7 @@ array1.join(' - ') // new string = '1 - 2 - 3'
 // AT
 array1 = [1, 2, 3, 4]
 array1.at(0) // == array1[0]
-// the last ellement by AT
+// the last element by AT
 array1.at(-1) //array1[array1.length - 1]
 
 // FLAT
@@ -51,15 +51,7 @@ const arrNested = [[9, 100], [4, 3], 5, [33, 90], 9]
 console.log(arrNested.flat()); //[9, 100,  4, 3,5,  33, 90, 9]
 
 
-
-
-
-
-
-
-
-
 // STRING to ARRAY
 const string = 'string'
-const arrr = [...string] // use SPREAD operator
-console.log(arrr);
+const arrA = [...string] // use SPREAD operator
+console.log(arrA);

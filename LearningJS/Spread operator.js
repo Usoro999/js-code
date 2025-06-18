@@ -1,7 +1,7 @@
 // SPREAD, since it is on right side of =
 
 const arr = [1, 2, 3];
-//need to create an array with 4 and 5 on the begining and with elements from arr
+//need to create an array with 4 and 5 on the beginning and with elements from arr
 //1.
 const arr1 = [4, 5, arr[0], arr[1], arr[2]];
 //2. 
@@ -48,3 +48,17 @@ console.log(d, f, g); // iPhone iPad Mac
 const str1 = 'usb';
 const [h, y, t] = [...str1];
 console.log(h, y, t); // u s b
+
+// Spread in objects
+const engineer = {
+  name: 'John',
+  lastName: 'Doe',
+  birthday: 1990,
+  skill: ['JavaScript', 'React', 'Node.js'],
+  location: 'USA',
+  region: 'California',
+}
+const engineerCopy = {
+  ...engineer,
+  age: 33
+}; 

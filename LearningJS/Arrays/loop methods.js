@@ -1,6 +1,6 @@
 // MAP method -> create a new array
 const arrayEUR = [100, 50, 35, 70, 95]
-// clasic 
+// classic 
 let arrayUSD = arrayEUR.map(function (value) {
   return value * 1.1
 })
@@ -34,7 +34,7 @@ console.log(max); // 100
 
 
 // Chaining of methods
-const valletUSD = arrayEUR
+const walletUSD = arrayEUR
   .map(val => val * 1.1)
   .reduce((sum, val) => sum + val)
 

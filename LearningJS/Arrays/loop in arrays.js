@@ -1,5 +1,5 @@
 //for-of loops
-const players = ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'];
+const players = ['Lewandowsky', 'Gnarby', 'Lewandowsky', 'Hummels'];
 for (const item of players) {
   console.log(item);
 };
@@ -16,5 +16,7 @@ players.forEach(player => {
 })
 
 players.forEach(function (player, index, players){
-  console.log(`${index+1} player's name is ${player}`)
+  console.log(`${index+1} player's name is ${player} of array ${players}`)
+})
+players.forEach((item, index) => {
 })

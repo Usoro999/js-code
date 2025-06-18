@@ -14,11 +14,11 @@ console.log(airline.slice(4)); // Air Portugal
 console.log(airline.slice(4, 7)); // Air => 4 -begin, 7 - end
 console.log((airline.slice(4, airline.indexOf(' ')))); // Air
 console.log(airline.slice(-3)); // gal => slice from the end
-console.log(airline.slice(4, -3)); // Air Portu
+console.log(airline.slice(4, -3)); // Air Porte
 console.log(airline.concat('GGG')); // TAP Air PortugalGGG
 
-const pssangerName = 'jOnAS';
-const lowerName = pssangerName.toLowerCase();
+const passengerName = 'jOnAS';
+const lowerName = passengerName.toLowerCase();
 const normalName = lowerName[0].toUpperCase() + lowerName.slice(1);
 console.log(normalName);
 
@@ -45,8 +45,6 @@ console.log(str.repeat(5)); // Mr. Yurii SOROKAMr. Yurii SOROKAMr. Yurii SOROKAM
 
 console.log(str.charAt(0)); // M
 console.log(str.indexOf("M")); // 0
-
-
 
 
 
