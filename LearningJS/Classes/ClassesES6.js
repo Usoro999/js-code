@@ -8,6 +8,7 @@ class PersonCl1 {
   constructor(firstName, lastName) { 
     this.firstName = firstName
     this.lastName = lastName  
+    this.age = 20
   }
   // Instance method
   fullName() {
@@ -31,6 +32,7 @@ class PersonCl1 {
 }
 const jessica = new PersonCl1('Jessica', 'Star')
 jessica.fullName()
+
 console.log(PersonCl1.calcAge(1985)) // 39
 console.log(PersonCl1.multipleMoney(2)) 
 console.info(PersonCl1.money)

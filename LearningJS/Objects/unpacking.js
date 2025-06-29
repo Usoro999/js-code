@@ -16,7 +16,7 @@ console.log(age)
 let a = 10;
 let b = 5;
 const obj = { a: 100, b: 500, c: 90, d:88 };
-({ a, b } = obj);
+({ a, b } = obj); // need () if you don't declare new variables by const, let
 console.log(a, b); // 100 500
 
 //Nested objects

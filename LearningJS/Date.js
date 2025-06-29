@@ -17,7 +17,7 @@ future.setDate(future.getDate() + 3) //Tue Nov 28 2045 03:15:30 GMT+0200 (Easter
 const now1 = new Date() // 2023-12-10T14:53:05.231Z
 now1.getDate()
 now1.getHours()
-console.log(+now1); // time in miliseconds(Number) => 1703082619484
+console.log(+now1); // time in milliseconds(Number) => 1703082619484
 
 now1.setUTCMinutes(min)
 

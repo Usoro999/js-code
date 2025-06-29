@@ -15,7 +15,7 @@ const func = (car) => {
     case Car.FORD:
       return Car.FORD;
     default:
-      return "Unknown car";
+      return "Unknown car"
   }
 }
 

@@ -5,9 +5,7 @@ const person = {
   lastName: 'Kirk',
   moneyOnAcc: [50, 200, 500, 210],
 
-  get getAccount() {
-    return this.moneyOnAcc
-  },
+  get getAccount() {return this.moneyOnAcc},
  
   set setNewAcc(number) {
     this.moneyOnAcc.push(number)

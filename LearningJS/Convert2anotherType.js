@@ -7,3 +7,6 @@ const resultY = String(y)
 const resultZ = Boolean(z)
 const result_x = Boolean(x)
 console.log(resultX, resultY, resultZ, result_x); // 15 "15" false true
+
+const a = new Array(...resultY)
+console.log(a);

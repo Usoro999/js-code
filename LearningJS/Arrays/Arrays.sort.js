@@ -1,7 +1,8 @@
 //SORT -> this function changes the array itself
-const names = ['John', 'Curtis', 'Aurea', '1Real']
+const names = ['John', 'Curtis', 'Aurae', '1Real']
+
 names.sort()
-console.log(names); // [ '1Real', 'Aurea', 'Curtis', 'John' ]
+console.log(names); // [ '1Real', 'Aurae', 'Curtis', 'John' ]
 //not gonna work with numbers
 const numbers = [-30, 100, 55, -34, 70]
 console.log(numbers.sort()); // [ -30, -34, 100, 55, 70 ]
