@@ -20,14 +20,19 @@ for (const item of Object.keys(hours)) {
   console.log(item);
 }
 
+
 for (const item of Object.values(hours)) {
   console.log(item);
 }
+
 
 for (const item of Object.entries(hours)) {
   console.log(item);
 }
 
+for (const [day, { open, close } ] of Object.entries(hours)) {
+  console.log(`Market works on ${day}: from ${open} to ${close}`);
+}
 for (const [day, { open, close } ] of Object.entries(hours)) {
   console.log(`Market works on ${day}: from ${open} to ${close}`);
 }
